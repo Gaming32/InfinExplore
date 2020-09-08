@@ -18,6 +18,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        // Set starting height
+        RaycastHit raycastHit;
+        Ray ray = new Ray(transform.position, Vector3.down);
+        if (Physics.Raycast(ray, out raycastHit, 1001f))
+        {
+            transform.position = raycastHit.point + Vector3.up * 2;
+        }
+
         jumpVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
     }
 
