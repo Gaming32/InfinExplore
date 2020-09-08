@@ -18,8 +18,7 @@ public class WorldSector : MonoBehaviour
     public bool generateOnStart = true;
     public float localHeight = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnValidate()
     {
         if (generateOnStart)
         {
@@ -118,11 +117,5 @@ public class WorldSector : MonoBehaviour
         {
             Gizmos.DrawSphere(vertex, .25f);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

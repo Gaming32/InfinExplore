@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sector
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 07b5147fc94ad9b4ea5d85b32175c5fe, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perlinPosition.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perlinPosition.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: zoom
+    value: 45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: octaves
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: height
+    value: 50
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key0.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key0.g
+    value: 0.2106123
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key0.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key0.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key1.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key1.g
+    value: 0.77507526
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key1.b
+    value: 0.4669811
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key1.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key2.r
+    value: 0.019935932
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key2.g
+    value: 0.6037736
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key2.b
+    value: 0.02137969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key2.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key3.r
+    value: 0.16189767
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key3.g
+    value: 0.6611668
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key3.b
+    value: 0.16313231
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key3.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key4.r
+    value: 0.3773585
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key4.g
+    value: 0.3773585
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key4.b
+    value: 0.3773585
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key4.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key5.r
+    value: 0.37647063
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key5.g
+    value: 0.37647063
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key5.b
+    value: 0.37647063
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key5.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key6.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key6.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key6.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key6.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key7.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key7.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key7.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.key7.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime0
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime1
+    value: 8867
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime2
+    value: 24287
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime3
+    value: 38936
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime4
+    value: 49151
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime5
+    value: 55512
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime6
+    value: 65535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.ctime7
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime0
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime1
+    value: 65535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime2
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime3
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime4
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime5
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime6
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.atime7
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.m_Mode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.m_NumColorKeys
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: vertexGradient.m_NumAlphaKeys
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sectorPosition.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sectorPosition.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: generateOnStart
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: localHeight
+    value: 1
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
