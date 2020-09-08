@@ -58,7 +58,10 @@
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\SunController.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\WorldSector.cs" />
+     <Compile Include="Assets\Scripts\Perlin.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/josia/MEGA/Projects/Unity/InfinaExplore/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

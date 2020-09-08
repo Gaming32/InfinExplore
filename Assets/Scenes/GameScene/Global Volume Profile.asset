@@ -20,14 +20,14 @@ MonoBehaviour:
     min: 0
     max: 360
   skyIntensityMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   exposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.5
   multiplier:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 2.5
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   updatePeriod:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 5
     min: 0
   includeSunInBaking:
@@ -68,8 +68,8 @@ MonoBehaviour:
     showAlpha: 0
     showEyeDropper: 1
   gradientDiffusion:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 1.5
 --- !u!114 &-3989682916221148300
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d877ec3e844f2ca46830012e8e79319b, type: 3}
   m_Name: PhysicallyBasedSky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   rotation:
     m_OverrideState: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
     m_Value: 3
   skyAmbientMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   fogType:
     m_OverrideState: 0
     m_Value: 0
