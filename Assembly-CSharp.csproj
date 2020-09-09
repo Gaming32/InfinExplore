@@ -62,6 +62,10 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\WorldSector.cs" />
      <Compile Include="Assets\Scripts\Perlin.cs" />
+     <Compile Include="Assets\Player.cs" />
+     <Compile Include="Assets\MaxP\Shaders\Scripts\DirtyLensFlare.cs" />
+     <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\DirtyLensFlare.shader" />
+     <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\Blur.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/josia/MEGA/Projects/Unity/InfinaExplore/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -12,6 +12,7 @@ public class WorldSector : MonoBehaviour
     [Header("Mesh Generator")]
     public float height = 15;
     public Gradient vertexGradient;
+    public float yAdjust;
 
     [Header("Sector Manager")]
     public Vector2Int sectorPosition;
@@ -74,6 +75,7 @@ public class WorldSector : MonoBehaviour
                 float baseY = Perlin.Fbm((perlinPosition.x + x) / zoom * (localHeight / 2), (perlinPosition.y + z) / zoom * (localHeight / 2), octaves);
                 //float y = (baseY + addValue) * mulValue + addValue;
                 float y = (baseY + addValue) * mulValue;
+                y += yAdjust;
                 vertices.Add(new Vector3(x, y, z));
             }
         }
@@ -83,7 +85,16 @@ public class WorldSector : MonoBehaviour
         List<Color> colors = new List<Color>();
         foreach (Vector3 vertex in vertices)
         {
-            colors.Add(vertexGradient.Evaluate(Mathf.InverseLerp(minY, height, vertex.y)));
+            Color color;
+            if (vertex.y < 0)
+            {
+                color = vertexGradient.Evaluate(0);
+            }
+            else
+            {
+                color = vertexGradient.Evaluate(Mathf.InverseLerp(minY, height, vertex.y));
+            }
+            colors.Add(color);
         }
         mesh.colors = colors.ToArray();
 
