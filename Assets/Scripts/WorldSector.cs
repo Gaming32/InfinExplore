@@ -29,14 +29,14 @@ public class WorldSector : MonoBehaviour
 
     public void GenerateSectorMesh()
     {
-        GenerateSectorMesh(null, null, null, null);
+        GenerateSectorMesh(new float[][] { null, null, null, null });
     }
 
-    public void GenerateSectorMesh(int[] edgeForward, int[] edgeLeft, int[] edgeRight, int[] edgeBack)
+    public void GenerateSectorMesh(float[][] edges)
     {
         Mesh mesh = new Mesh();
         mesh.name = $"Sector {sectorPosition.x}x{sectorPosition.y}";
-        mesh = CreateSectorMesh(mesh, new int[][] { edgeForward, edgeLeft, edgeRight, edgeBack});
+        mesh = CreateSectorMesh(mesh, edges);
         GetComponent<MeshFilter>().sharedMesh = mesh;
         GetComponent<MeshCollider>().sharedMesh = mesh;
     }
@@ -61,7 +61,7 @@ public class WorldSector : MonoBehaviour
         return (min, max);
     }
 
-    private Mesh CreateSectorMesh(Mesh mesh, int[][] edges)
+    private Mesh CreateSectorMesh(Mesh mesh, float[][] edges)
     {
         mesh.Clear();
 
@@ -72,10 +72,38 @@ public class WorldSector : MonoBehaviour
         {
             for (int z = 0; z < 256; z++)
             {
-                float baseY = Perlin.Fbm((perlinPosition.x + x) / zoom * (localHeight / 2), (perlinPosition.y + z) / zoom * (localHeight / 2), octaves);
-                //float y = (baseY + addValue) * mulValue + addValue;
-                float y = (baseY + addValue) * mulValue;
-                y += yAdjust;
+                float y = 0;
+                bool generateY = true;
+
+                if (z == 255 && edges[0] != null)
+                {
+                    y = edges[0][x];
+                    generateY = false;
+                }
+                else if (z == 0 && edges[3] != null)
+                {
+                    y = edges[3][x];
+                    generateY = false;
+                }
+
+                if (x == 0 && edges[1] != null)
+                {
+                    y = edges[1][z];
+                    generateY = false;
+                }
+                else if (x == 255 && edges[2] != null)
+                {
+                    y = edges[2][z];
+                    generateY = false;
+                }
+
+                if (generateY)
+                {
+                    float baseY = Perlin.Fbm((perlinPosition.x + x) / zoom * (localHeight / 2), (perlinPosition.y + z) / zoom * (localHeight / 2), octaves);
+                    //float y = (baseY + addValue) * mulValue + addValue;
+                    y = (baseY + addValue) * mulValue;
+                    y += yAdjust;
+                }
                 vertices.Add(new Vector3(x, y, z));
             }
         }

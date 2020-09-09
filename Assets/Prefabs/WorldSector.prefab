@@ -177,7 +177,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   yAdjust: 0
   sectorPosition: {x: 0, y: 0}
-  generateOnStart: 1
+  generateOnStart: 0
   localHeight: 1
 --- !u!33 &3656280436799564181
 MeshFilter:
